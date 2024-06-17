@@ -1,72 +1,278 @@
 /* 홈페이지 스타일 */
-.intro, .latest-projects, .services {
-    padding: 2rem;
-    background-color: white;
-    margin: 1rem auto;
-    max-width: 1000px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+.hero {
+  position: relative;
+  background: url('../img/hero-image.webp') no-repeat center center/cover;
+  padding: 6rem 2rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0 2rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.hero h2 {
+  position: relative;
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  animation: slideInDown 1s ease-out;
+}
+
+.hero p {
+  position: relative;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  animation: slideInUp 1s ease-out;
+}
+
+.cta-button {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #8B4513;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  animation: bounceIn 1.5s ease-out;
+}
+
+.cta-button:hover {
+  background-color: #A0522D;
+}
+
+.intro, .latest-projects, .services, .testimonials, .news, .partners {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.intro h2, .latest-projects h2, .services h2, .testimonials h2, .news h2, .partners h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+  animation: slideInDown 1s ease-out;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.features li {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #555;
+  animation: fadeInUp 1s ease-out;
+}
+
+.project, .service {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeInUp 1s ease-out;
+}
+
+.project img, .service img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-description, .service-description {
+  text-align: center;
+}
+
+.project-description h3, .service-description h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.project-description p, .service-description p {
+  margin: 0.5rem 0 0;
+  color: #777;
+}
+
+.project:hover, .service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+.news-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  animation: fadeInUp 1s ease-out;
+}
+
+.news-item h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.news-item p {
+  color: #777;
+}
+
+.news-item a {
+  color: #8B4513;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out;
+}
+
+.partner-logos img {
+  max-width: 100px;
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features li {
+    margin-bottom: 1rem;
+  }
+
+  .project, .service {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project img, .service img {
+    margin: 0 0 1rem 0;
+  }
+
+  .project-description, .service-description {
     text-align: center;
   }
-  
-  .intro h2, .latest-projects h2, .services h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #8B4513; /* 제목 색상 변경 */
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: ease-in-out;
   }
-  
-  .project, .service {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
   }
-  
-  .project img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    margin-right: 1rem;
+  20% {
+    transform: scale(1.1);
   }
-  
-  .project-description, .service {
-    flex: 1;
-    text-align: left;
+  40% {
+    transform: scale(0.9);
   }
-  
-  .project-description h3, .service h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #A0522D; /* 항목 제목 색상 변경 */
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
   }
-  
-  .project-description p, .service p {
-    margin: 0.5rem 0 0;
-    color: #555;
+  80% {
+    transform: scale(0.97);
   }
-  
-  .project:hover, .service:hover {
-    transform: scale(1.05); /* 크기 증가 효과 */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 그림자 강화 효과 */
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  /* 반응형 디자인 설정 */
-  @media (max-width: 768px) {
-    .project, .service {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .project img {
-      margin: 0 0 1rem 0;
-    }
-  
-    .project-description, .service {
-      text-align: center;
-    }
-  }
-  
+}

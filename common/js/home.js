@@ -1,33 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 프로젝트와 서비스 항목에 마우스 오버 애니메이션 추가
-  const items = document.querySelectorAll('.project, .service');
-  items.forEach(item => {
-    item.addEventListener('mouseover', () => {
-      item.style.transform = 'scale(1.05)';
-      item.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.2)';
-    });
-    item.addEventListener('mouseout', () => {
-      item.style.transform = 'scale(1)';
-      item.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-    });
-  });
+  // 프로젝트, 서비스, 특징, 고객 리뷰 및 뉴스 항목에 마우스 오버 효과 추가
+  const projects = document.querySelectorAll('.project');
+  const services = document.querySelectorAll('.service');
+  const testimonials = document.querySelectorAll('.testimonial');
+  const newsItems = document.querySelectorAll('.news-item');
+  const features = document.querySelectorAll('.features li');
 
-  // 스크롤 시 페이드 인 효과 추가
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -50px 0px"
-  };
+  function addHoverEffect(elements) {
+    elements.forEach(element => {
+      element.addEventListener('mouseover', () => {
+        element.style.transform = 'scale(1.05)';
+        element.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.2)';
+      });
 
-  const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('appear');
-      appearOnScroll.unobserve(entry.target);
+      element.addEventListener('mouseout', () => {
+        element.style.transform = 'scale(1)';
+        element.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+      });
+
+      element.addEventListener('click', () => {
+        alert('상세 페이지로 이동합니다.');
+        // 여기에 상세 페이지로 이동하는 코드 추가
+      });
     });
-  }, appearOptions);
+  }
 
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
+  addHoverEffect(projects);
+  addHoverEffect(services);
+  addHoverEffect(testimonials);
+  addHoverEffect(newsItems);
+  addHoverEffect(features);
 });
