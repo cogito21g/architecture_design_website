@@ -1,0 +1,72 @@
+/* 홈페이지 스타일 */
+.intro, .latest-projects, .services {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .intro h2, .latest-projects h2, .services h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #8B4513; /* 제목 색상 변경 */
+  }
+  
+  .project, .service {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 1rem;
+  }
+  
+  .project-description, .service {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .project-description h3, .service h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #A0522D; /* 항목 제목 색상 변경 */
+  }
+  
+  .project-description p, .service p {
+    margin: 0.5rem 0 0;
+    color: #555;
+  }
+  
+  .project:hover, .service:hover {
+    transform: scale(1.05); /* 크기 증가 효과 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 그림자 강화 효과 */
+  }
+  
+  /* 반응형 디자인 설정 */
+  @media (max-width: 768px) {
+    .project, .service {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .project img {
+      margin: 0 0 1rem 0;
+    }
+  
+    .project-description, .service {
+      text-align: center;
+    }
+  }
+  
