@@ -1,7 +1,15 @@
-# 
+# Architecture Design
+
+건축 디자인 회사를 위한 웹 사이트입니다. 회사 소개, 프로젝트, 서비스, 연락처 등의 정보를 포함합니다.
 
 ## 프로젝트 설명
 
+주요기능
+- **홈페이지**: 회사 소개, 최신 프로젝트, 주요 서비스
+- **회사 소개 페이지**: 회사의 역사, 팀 멤버 소개, 비전 및 목표
+- **프로젝트 페이지**: 완료된 프로젝트, 진행 중인 프로젝트, 프로젝트 갤러리
+- **서비스 페이지**: 제공하는 서비스 목록 및 상세 설명
+- **연락처 페이지**: 회사 주소, 연락처 정보, 지도 표시, 문의 양식
 
 
 
@@ -34,15 +42,37 @@
 
 ```
 project/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── scripts.js
-├── images/
-│   └── (카페 이미지 파일들)
-├── fonts/
-│   └── (웹 폰트 파일들)
+│
+├── index.html          # 홈페이지
+│
+├── about/
+│   ├── about.html      # 회사 소개 페이지
+│   ├── about.css       # 회사 소개 페이지 스타일
+│   └── about.js        # 회사 소개 페이지 스크립트
+│
+├── projects/
+│   ├── projects.html   # 프로젝트 페이지
+│   ├── projects.css    # 프로젝트 페이지 스타일
+│   └── projects.js     # 프로젝트 페이지 스크립트
+│
+├── services/
+│   ├── services.html   # 서비스 페이지
+│   ├── services.css    # 서비스 페이지 스타일
+│   └── services.js     # 서비스 페이지 스크립트
+│
+├── contact/
+│   ├── contact.html    # 연락처 페이지
+│   ├── contact.css     # 연락처 페이지 스타일
+│   └── contact.js      # 연락처 페이지 스크립트
+│
+├── common/
+│   ├── css/
+│   │   └── style.css   # 공통 스타일
+│   │
+│   ├── js/
+│   │   └── main.js     # 공통 스크립트
+│   │
+│   └── img/            # 공통 이미지
 ├── .gitignore
 ├── README.md
 └── LICENSE
