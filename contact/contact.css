@@ -1,0 +1,30 @@
+/* 연락처 섹션 스타일 */
+.contact-overview {
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .contact-overview h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  #map {
+    width: 100%;
+    height: 400px;
+    margin-top: 2rem;
+  }
+  
