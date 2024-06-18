@@ -38,6 +38,26 @@
 - Modern JavaScript (ES6+)
 
 
+## 결과 이미지
+![result 영상](https://www.youtube.com/watch?v=JUtxC2RG3sM)
+
+<p align="center"> 
+   <img src="./result/result_home.png" align="center" width="32%">
+   <img src="./result/result_intro.png" align="center" width="32%">
+</p>
+
+<p align="center"> 
+   <img src="./result/result_project1.png" align="center" width="32%">
+   <img src="./result/result_project2.png" align="center" width="32%">
+</p>
+<p align="center"> 
+
+   <img src="./result/result_service.png" align="center" width="32%">
+   <img src="./result/result_news.png" align="center" width="32%">
+   <img src="./result/result_contact.png" align="center" width="32%">
+</p>
+
+
 ## 프로젝트 구조
 
 ```
