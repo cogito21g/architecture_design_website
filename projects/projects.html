@@ -9,59 +9,87 @@
 </head>
 <body>
   <header>
-    <h1>Architecture Design</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">홈</a></li>
-        <li><a href="../about/about.html">회사 소개</a></li>
-        <li><a href="projects.html" class="active">프로젝트</a></li>
-        <li><a href="../services/services.html">서비스</a></li>
-        <li><a href="../contact/contact.html">연락처</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Architecture Design</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">홈</a></li>
+          <li><a href="../about/about.html">회사 소개</a></li>
+          <li><a href="projects.html" class="active">프로젝트</a></li>
+          <li><a href="../services/services.html">서비스</a></li>
+          <li><a href="../news/news.html">소식</a></li>
+          <li><a href="../contact/contact.html">연락처</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="projects-overview">
       <h2>완료된 프로젝트</h2>
-      <div class="project">
-        <img src="../common/img/project1.webp" alt="프로젝트 1">
-        <div class="project-description">
-          <h3>프로젝트 이름 1</h3>
-          <p>프로젝트 1에 대한 설명입니다.</p>
+      <div class="projects-gallery">
+        <div class="project-item" data-title="프로젝트 이름 1" data-description="프로젝트 1에 대한 설명입니다." data-img="../common/img/project1.webp">
+          <img src="../common/img/project1.webp" alt="프로젝트 1">
+          <div class="project-description">
+            <h3>프로젝트 이름 1</h3>
+            <p>프로젝트 1에 대한 설명입니다.</p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <img src="../common/img/project2.webp" alt="프로젝트 2">
-        <div class="project-description">
-          <h3>프로젝트 이름 2</h3>
-          <p>프로젝트 2에 대한 설명입니다.</p>
+        <div class="project-item" data-title="프로젝트 이름 2" data-description="프로젝트 2에 대한 설명입니다." data-img="../common/img/project2.webp">
+          <img src="../common/img/project2.webp" alt="프로젝트 2">
+          <div class="project-description">
+            <h3>프로젝트 이름 2</h3>
+            <p>프로젝트 2에 대한 설명입니다.</p>
+          </div>
         </div>
+        <!-- 더 많은 프로젝트 아이템 추가 가능 -->
       </div>
     </section>
 
     <section class="projects-ongoing">
       <h2>진행 중인 프로젝트</h2>
-      <div class="project">
-        <img src="../common/img/ongoing1.webp" alt="진행 중 프로젝트 1">
-        <div class="project-description">
-          <h3>프로젝트 이름 3</h3>
-          <p>진행 중 프로젝트 1에 대한 설명입니다.</p>
+      <div class="projects-gallery">
+        <div class="project-item" data-title="프로젝트 이름 3" data-description="진행 중 프로젝트 1에 대한 설명입니다." data-img="../common/img/ongoing1.webp">
+          <img src="../common/img/ongoing1.webp" alt="진행 중 프로젝트 1">
+          <div class="project-description">
+            <h3>프로젝트 이름 3</h3>
+            <p>진행 중 프로젝트 1에 대한 설명입니다.</p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <img src="../common/img/ongoing2.webp" alt="진행 중 프로젝트 2">
-        <div class="project-description">
-          <h3>프로젝트 이름 4</h3>
-          <p>진행 중 프로젝트 2에 대한 설명입니다.</p>
+        <div class="project-item" data-title="프로젝트 이름 4" data-description="진행 중 프로젝트 2에 대한 설명입니다." data-img="../common/img/ongoing2.webp">
+          <img src="../common/img/ongoing2.webp" alt="진행 중 프로젝트 2">
+          <div class="project-description">
+            <h3>프로젝트 이름 4</h3>
+            <p>진행 중 프로젝트 2에 대한 설명입니다.</p>
+          </div>
         </div>
+        <!-- 더 많은 프로젝트 아이템 추가 가능 -->
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Architecture Design. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 Architecture Design. All rights reserved.</p>
+      <div class="footer-nav">
+        <a href="../index.html">홈</a>
+        <a href="../about/about.html">회사 소개</a>
+        <a href="projects.html">프로젝트</a>
+        <a href="../services/services.html">서비스</a>
+        <a href="../news/news.html">소식</a>
+        <a href="../contact/contact.html">연락처</a>
+      </div>
+    </div>
   </footer>
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-img" src="" alt="프로젝트 이미지">
+      <h3 id="modal-title">프로젝트 제목</h3>
+      <p id="modal-description">프로젝트 설명</p>
+    </div>
+  </div>
 
   <script src="../common/js/main.js"></script>
   <script src="projects.js"></script>
