@@ -39,7 +39,7 @@
 
 
 ## 결과 이미지
-![result 영상](https://www.youtube.com/watch?v=JUtxC2RG3sM)
+[result 영상](https://www.youtube.com/watch?v=JUtxC2RG3sM)
 
 <p align="center"> 
    <img src="./result/result_home.png" align="center" width="32%">
