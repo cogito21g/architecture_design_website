@@ -1,0 +1,128 @@
+/* 섹션 스타일 */
+section {
+    padding: 1rem 0;
+    margin: 1rem auto;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* 뉴스 개요 */
+  .news-overview p {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  /* 뉴스 목록 */
+  .news-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .news-list th, .news-list td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center; /* 가운데 정렬 */
+    vertical-align: middle;
+  }
+  
+  .news-list th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .news-list .news-item {
+    transition: background-color 0.3s;
+  }
+  
+  .news-list .news-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .news-list img {
+    width: 80px; /* 간격을 줄이기 위해 크기 조정 */
+    height: auto;
+  }
+  
+  .read-more {
+    color: #fff;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more:hover {
+    background-color: #555;
+  }
+  
+  /* 테이블 헤더와 본문 간격 */
+  .news-list thead th {
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .news-list tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* 페이징 스타일 */
+  .pagination {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .pagination button {
+    background: none;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .pagination button:hover {
+    color: #555;
+  }
+  
+  .pagination button.active {
+    color: #ffd166;
+  }
+  
+  .pagination button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination .page-info {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .news-list img {
+      width: 60px;
+    }
+    
+    .news-list th, .news-list td {
+      padding: 0.5rem;
+    }
+  }
+  
