@@ -1,0 +1,77 @@
+/* 섹션 스타일 */
+section {
+    padding: 2rem 0;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  
+  section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* 서비스 개요 */
+  .services-overview p {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  /* 서비스 목록 */
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-item {
+    margin: 1rem;
+    width: calc(33.333% - 2rem);
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .service-description {
+    padding: 1rem;
+  }
+  
+  .service-description h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  .service-description p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  @media (max-width: 768px) {
+    .service-item {
+      width: calc(50% - 2rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-item {
+      width: calc(100% - 2rem);
+    }
+  }
+  

@@ -9,27 +9,60 @@
 </head>
 <body>
   <header>
-    <h1>Architecture Design</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">홈</a></li>
-        <li><a href="../about/about.html">회사 소개</a></li>
-        <li><a href="../projects/projects.html">프로젝트</a></li>
-        <li><a href="services.html" class="active">서비스</a></li>
-        <li><a href="../contact/contact.html">연락처</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Architecture Design</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">홈</a></li>
+          <li><a href="../about/about.html">회사 소개</a></li>
+          <li><a href="../projects/projects.html">프로젝트</a></li>
+          <li><a href="services.html" class="active">서비스</a></li>
+          <li><a href="../news/news.html">소식</a></li>
+          <li><a href="../contact/contact.html">연락처</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h2>서비스</h2>
-    <p>Architecture Design의 서비스를 확인하세요.</p>
+    <section class="services-overview">
+      <h2>제공 서비스</h2>
+      <p>저희가 제공하는 다양한 서비스를 확인해보세요. 각 서비스에 대한 자세한 설명을 아래에서 확인하실 수 있습니다.</p>
+    </section>
+
+    <section class="services-list">
+      <div class="service-item">
+        <img src="../common/img/service1.webp" alt="서비스 1">
+        <div class="service-description">
+          <h3>서비스 이름 1</h3>
+          <p>서비스 1에 대한 간략한 설명입니다.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="../common/img/service2.webp" alt="서비스 2">
+        <div class="service-description">
+          <h3>서비스 이름 2</h3>
+          <p>서비스 2에 대한 간략한 설명입니다.</p>
+        </div>
+      </div>
+      <!-- 더 많은 서비스 아이템 추가 가능 -->
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Architecture Design. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 Architecture Design. All rights reserved.</p>
+      <div class="footer-nav">
+        <a href="../index.html">홈</a>
+        <a href="../about/about.html">회사 소개</a>
+        <a href="../projects/projects.html">프로젝트</a>
+        <a href="services.html">서비스</a>
+        <a href="../news/news.html">소식</a>
+        <a href="../contact/contact.html">연락처</a>
+      </div>
+    </div>
   </footer>
-
+  
   <script src="../common/js/main.js"></script>
   <script src="services.js"></script>
 </body>
